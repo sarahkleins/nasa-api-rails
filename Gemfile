@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rspec-rails', '~> 3.4.0'
+gem 'dotenv-rails', :groups => [:development, :test]
 
 group :development, :test do
   gem 'byebug'
