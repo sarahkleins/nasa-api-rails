@@ -50,13 +50,17 @@
 
   @include mq-min($desktop) {
     margin-bottom: 1.4em;
+  }
+}
+
+.nasa-byline {
+  @include mq-min($desktop) {
     font-size: 1.4rem;
   }
 }
 
 .nasa-date {
   @include mq-min($desktop) {
-    margin-bottom: 1.4em;
     font-size: 1.6rem;
   }
 }
@@ -64,10 +68,6 @@
 .nasa-image,
 .nasa-iframe{
   margin-bottom: 14px;
-}
-
-.nasa-image {
-
 }
 
 .nasa-desc {
