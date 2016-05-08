@@ -1,4 +1,20 @@
-<h1><%= @nasa_api["title"] %></h1>
-<img src="<%= @nasa_api["url"] %>" />
-<p><%= @nasa_api["explanation"] %></p>
-<p><%= @nasa_api["date"] %></p>
+<div class="wrapper">
+  <div class="bar">
+    <div class="container">
+      <%= image_tag('nasa-logo.svg', class: 'nasa-logo')%>
+
+      <p class="nasa-stamp">Nasa Photo of the Day</p>
+      <h1 class="nasa-heading"><%= @nasa_api["title"] %></h1>
+      <p class="nasa-date"><%= @nasa_api["date"] %></p>
+
+      <main class="nasa-content">
+        <% if @media_type_is_video %>
+          <iframe class="nasa-iframe" src="<%= @nasa_api["url"]%>"></iframe>
+        <% else %>
+          <img class="nasa-image" src="<%= @nasa_api["url"] %>" />
+        <% end %>
+        <p class="nasa-desc"><%= @nasa_api["explanation"] %></p>
+      </main>
+    </div>
+  </div>
+</div>
