@@ -1,0 +1,15 @@
+// variables
+
+$tablet: 700px;
+$desktop: 1050px;
+$desktop-lg: 1400px;
+
+// colors
+$dark-gray: #333333;
+
+// partials
+
+@import 'mixins';
+@import 'layout';
+@import 'normalize';
+@import 'content';

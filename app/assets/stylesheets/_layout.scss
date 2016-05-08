@@ -1,0 +1,23 @@
+// LAYOUT
+
+.wrapper {
+  @include clearfix;
+}
+
+.bar {
+  background: url("space-bar.jpg");
+  height: 14px;
+
+  @include mq-min($desktop) {
+    height: 7px;
+  }
+}
+
+.container {
+  @include clearfix;
+  max-width: 860px; //960
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: #333333;
+}
