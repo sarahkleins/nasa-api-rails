@@ -21,3 +21,18 @@
   padding-top: 40px;
   color: #333333;
 }
+
+// GRID
+
+@include mq-min($tablet) {
+  .col {
+    float: right;
+    margin-left: 5%;
+
+    &:last-of-type {
+      margin-left: 0;
+    }
+  }
+
+  .col-half   { width: 47.5%;  }
+}

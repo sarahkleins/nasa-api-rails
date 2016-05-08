@@ -8,12 +8,17 @@
       <p class="nasa-date"><%= @nasa_api["date"] %></p>
 
       <main class="nasa-content">
-        <% if @media_type_is_video %>
-          <iframe class="nasa-iframe" src="<%= @nasa_api["url"]%>"></iframe>
-        <% else %>
-          <img class="nasa-image" src="<%= @nasa_api["url"] %>" />
-        <% end %>
-        <p class="nasa-desc"><%= @nasa_api["explanation"] %></p>
+        <div class="col col-half">
+          <% if @media_type_is_video %>
+            <iframe class="nasa-iframe" src="<%= @nasa_api["url"]%>"></iframe>
+          <% else %>
+            <img class="nasa-image" src="<%= @nasa_api["url"] %>" />
+          <% end %>
+          <p class="nasa-byline">&copy; <%= @nasa_api["copyright"] %></p>
+        </div>
+        <div class="col col-half">
+          <p class="nasa-desc"><%= @nasa_api["explanation"] %></p>
+        </div>
       </main>
     </div>
   </div>

@@ -1,3 +1,7 @@
+.nasa-content {
+  @include clearfix;
+}
+
 .nasa-logo {
   display: none;
 
@@ -37,12 +41,20 @@
   }
 }
 
-.nasa-date {
+.nasa-date,
+.nasa-byline {
   display: inline-block;
   margin-bottom: 1em;
   font: italic 400 1.0em "Sanchez", sans-serif;
   color: rgba(51, 51, 51, 0.4);
 
+  @include mq-min($desktop) {
+    margin-bottom: 1.4em;
+    font-size: 1.4rem;
+  }
+}
+
+.nasa-date {
   @include mq-min($desktop) {
     margin-bottom: 1.4em;
     font-size: 1.6rem;
@@ -55,10 +67,7 @@
 }
 
 .nasa-image {
-  @include mq-min($tablet) {
-    float: right;
-    max-width: 45%;
-  }
+
 }
 
 .nasa-desc {
@@ -66,9 +75,6 @@
   margin-bottom: 1.1em;
 
   @include mq-min($tablet) {
-    float: right;
-    max-width: 52%;
-    margin-right: 3%;
     font-size: 1.8em;
   }
 }
