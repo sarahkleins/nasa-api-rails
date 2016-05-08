@@ -6,8 +6,8 @@
   display: none;
 
   @include mq-min($desktop-lg) {
-    display: block;
     position: fixed;
+    display: block;
     width: 200px;
     top: 35px;
     left: 35px;
@@ -15,7 +15,7 @@
 }
 
 .nasa-heading {
-  font: 700 1.8em "Sanchez", serif;
+  font: 700 1.8rem "Sanchez", serif;
   margin-bottom: 0.5em;
 
   @include mq-min($tablet) {
@@ -32,11 +32,11 @@
   border-bottom: 1px solid;
   padding: 0.3em 0;
   margin-bottom: 0.6em;
-  font: 800 1.0em "Questrial", sans-serif;
+  font: 800 1.0rem "Questrial", sans-serif;
   text-transform: uppercase;
 
   @include mq-min($tablet) {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     margin-bottom: 1.4em;
   }
 }
@@ -45,7 +45,7 @@
 .nasa-byline {
   display: inline-block;
   margin-bottom: 1em;
-  font: italic 400 1.0em "Sanchez", sans-serif;
+  font: italic 400 1.0rem "Sanchez", sans-serif;
   color: rgba(51, 51, 51, 0.4);
 
   @include mq-min($desktop) {
@@ -71,10 +71,10 @@
 }
 
 .nasa-desc {
-  font: italic 400 1.4em/1.4em "Sanchez", serif;
+  font: italic 400 1.4rem/1.4em "Sanchez", serif;
   margin-bottom: 1.1em;
 
   @include mq-min($tablet) {
-    font-size: 1.8em;
+    font-size: 1.8rem;
   }
 }

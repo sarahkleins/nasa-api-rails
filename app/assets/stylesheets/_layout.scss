@@ -15,11 +15,11 @@
 
 .container {
   @include clearfix;
-  max-width: 860px; //960
+  max-width: 860px;
   width: 85%;
   margin: 0 auto;
   padding-top: 40px;
-  color: #333333;
+  color: $dark-gray;
 }
 
 // GRID
