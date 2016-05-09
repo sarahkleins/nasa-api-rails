@@ -5,9 +5,15 @@
 .nasa-logo {
   display: none;
 
-  @include mq-min($desktop-lg) {
+  @include mq-min($desktop) {
     position: fixed;
     display: block;
+    width: 10%;
+    top: 35px;
+    left: 20px;
+  }
+
+  @include mq-min($desktop-lg) {
     width: 200px;
     top: 35px;
     left: 35px;
@@ -68,6 +74,11 @@
 .nasa-image,
 .nasa-iframe{
   margin-bottom: 14px;
+}
+
+.nasa-iframe {
+  height: 250px;
+  border: none;
 }
 
 .nasa-desc {
