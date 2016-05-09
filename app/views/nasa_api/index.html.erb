@@ -9,12 +9,14 @@
 
       <main class="nasa-content">
         <div class="col col-half">
-          <% if @media_type_is_video %>
+          <% if @media_type_video %>
             <iframe class="nasa-iframe" src="<%= @nasa_api["url"]%>"></iframe>
           <% else %>
             <img class="nasa-image" src="<%= @nasa_api["url"] %>" />
           <% end %>
+          <% if @copyright_present %>
           <p class="nasa-byline">&copy; <%= @nasa_api["copyright"] %></p>
+          <% end %>
         </div>
         <div class="col col-half">
           <p class="nasa-desc"><%= @nasa_api["explanation"] %></p>
